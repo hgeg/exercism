@@ -1,0 +1,92 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-06 19:58:09.69737301 UTC
+
+interface luhn-1.3.0.6-77PwGGMVp2tJMwwz7E5v8N:Luhn 8063
+  interface hash: 2945d7f63e6a9d6fff06f45f38efb25e
+  ABI hash: 0703fb3fde3da804b8727e0f81e16756
+  export-list hash: e9eccf7ea0f23d07dba89dfcd3f51a95
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Luhn.isValid
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 0f6e335e98e2ddac4f2764f212d2f08a
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Real f7dad82c1d43d80823865d3e6c6636e0
+import  -/  base-4.12.0.0:GHC.Unicode e72f63c0b07b1495548f1f84ce6c22b5
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+37ef6dd8e87ddbfbeec03481f39b5996
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Luhn.$trModule3 Luhn.$trModule1) -}
+b9f0843f3e322a440c944ece0b549b82
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Luhn.$trModule2) -}
+da50e3574a08c3b21d6523868988a9b8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Luhn"#) -}
+75a82bec7cdb617c48ca6704ba92c5b9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Luhn.$trModule4) -}
+891adcdfa9db97cd7b5c259b160e2a43
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("luhn-1.3.0.6-77PwGGMVp2tJMwwz7E5v8N"#) -}
+79eec0cb4576b1deb564aaadf7c69255
+  $wgo2 ::
+    [GHC.Types.Int]
+    -> [GHC.Types.Int] -> GHC.Prim.Int# -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><S,U>,
+     Inline: [2] -}
+5b8e200c4d43d7c83335c0d6bf134516
+  isValid :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (n :: GHC.Base.String) ->
+                 let {
+                   sanitized :: [GHC.Types.Int]
+                   = Luhn.isValid_go
+                       (GHC.List.reverse1
+                          @ GHC.Types.Char
+                          n
+                          (GHC.Types.[] @ GHC.Types.Char))
+                 } in
+                 case GHC.List.$wlenAcc
+                        @ GHC.Types.Int
+                        sanitized
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Prim.># ww2 1# of lwild {
+                   DEFAULT -> GHC.Types.False
+                   1# -> Luhn.$wgo2 Luhn.isValid_xs' sanitized 0# } }) -}
+41c448638f3014213939ab8b1146b51a
+  isValid_go :: [GHC.Types.Char] -> [GHC.Types.Int]
+  {- Arity: 1, Strictness: <S,1*U> -}
+6c3ae216c46f69c3731478e6f206e8a2
+  isValid_xs' :: [GHC.Types.Int]
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

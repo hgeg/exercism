@@ -1,0 +1,116 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-26 10:38:21.104753614 UTC
+
+interface phone-number-1.6.1.8-6FPtvKQsnwF6ga8uNUOXCi:Phone 8063
+  interface hash: 048fe9413b0fe2ac71b2397239c43c83
+  ABI hash: dc2a8d32e45746be0654c6cf037621b9
+  export-list hash: bb9fa6e592c72d6a549aef964c7749d4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Phone.number
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 0f6e335e98e2ddac4f2764f212d2f08a
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Err 28d622b06927ca4c3b335ec5326c34b2
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Unicode e72f63c0b07b1495548f1f84ce6c22b5
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+c395ea701014a0e73c446efb7527415b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Phone.$trModule3 Phone.$trModule1) -}
+1c587f4da8b937978aec6e40a87f9c97
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Phone.$trModule2) -}
+64264951e1a7f0baafb8e5c91d6eedfe
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Phone"#) -}
+134db226de253f52f79eb1b9b4d59686
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Phone.$trModule4) -}
+6c7deefa182ff08a2f45b8ac03735364
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("phone-number-1.6.1.8-6FPtvKQsnwF6ga8uNUOXCi"#) -}
+76d602a5b1563cdb528c83c187f4219a
+  number :: GHC.Base.String -> GHC.Maybe.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <B,A>x,
+     Unfolding: InlineRule (1, True, True)
+                (\ (xs :: GHC.Base.String) ->
+                 GHC.Err.undefined
+                   @ 'GHC.Types.LiftedRep
+                   @ (GHC.Maybe.Maybe GHC.Base.String)
+                   Phone.number1
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))) -}
+4909795972e9d094fb8ace39040b1116
+  number1 :: GHC.Stack.Types.CallStack
+  {- Strictness: m2,
+     Unfolding: (GHC.Stack.Types.PushCallStack
+                   Phone.number10
+                   Phone.number2
+                   GHC.Stack.Types.EmptyCallStack) -}
+9a7b95c9c8b4bfa59154eb895a87347c
+  number10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Phone.number11) -}
+6db8466d3767eec58e134f498cb17aa5
+  number11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("undefined"#) -}
+9b44fb02da604a0146cc82c80689fa39
+  number2 :: GHC.Stack.Types.SrcLoc
+  {- Strictness: m,
+     Unfolding: (GHC.Stack.Types.SrcLoc
+                   Phone.number9
+                   Phone.number8
+                   Phone.number6
+                   Phone.number5
+                   Phone.number4
+                   Phone.number5
+                   Phone.number3) -}
+aadf1c7ce24eb1cdbba1ff03e37423e8
+  number3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 22#) -}
+c8396c8b1ae74696752c5e61f20f7840
+  number4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 13#) -}
+fd1f8dbb0277a00cd3ed39a8573a7e8c
+  number5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 6#) -}
+7971adeb010426c5dc254fa8840a3cb4
+  number6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Phone.number7) -}
+308980964be9f11bce55cf735df6c652
+  number7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("src/Phone.hs"#) -}
+c5b82245d09f204a83bb0d0ab292c2dc
+  number8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Phone.$trModule2) -}
+a5e0abb31a16dd434f86b3158b75a6e2
+  number9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Phone.$trModule4) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

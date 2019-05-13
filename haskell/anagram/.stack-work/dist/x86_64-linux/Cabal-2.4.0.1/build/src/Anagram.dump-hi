@@ -1,0 +1,421 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-22 18:31:04.62559474 UTC
+
+interface anagram-1.4.0.8-2ki32etKQuzDd7eoySjByo:Anagram 8063
+  interface hash: 155ed98d027f224f53d6cd9f66dfb36e
+  ABI hash: 56f2922c473dbce9a9a0165f598041e3
+  export-list hash: 95480e0ecd2af31af94e5151cc5777a6
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Anagram.anagramsFor
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 0f6e335e98e2ddac4f2764f212d2f08a
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Unicode e72f63c0b07b1495548f1f84ce6c22b5
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+7a995ad11d9e2af32467e2f472d8bdb4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Anagram.$trModule3
+                   Anagram.$trModule1) -}
+0dd1b7f5c8b5e5feb91d61e54f566cc1
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Anagram.$trModule2) -}
+591289e22dc91bb7515239f730799317
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Anagram"#) -}
+4aee58946ada5af336ef103bf9f82929
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Anagram.$trModule4) -}
+ac0cab39f439450c41297a1bcdbca184
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("anagram-1.4.0.8-2ki32etKQuzDd7eoySjByo"#) -}
+e48020888caca1c206ee8ecb6256476d
+  $wgo :: [GHC.Types.Char] -> GHC.Prim.Int# -> GHC.Types.Int
+  {- Arity: 2, Strictness: <S,1*U><S,U>m, Inline: [2] -}
+7010e726448d6c479aa753d69bf419b9
+  anagramsFor ::
+    GHC.Base.String -> [GHC.Base.String] -> [GHC.Base.String]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) (xss :: [GHC.Base.String]) ->
+                 let {
+                   small :: GHC.Base.String
+                   = GHC.Base.map
+                       @ GHC.Types.Char
+                       @ GHC.Types.Char
+                       GHC.Unicode.toLower
+                       xs
+                 } in
+                 let {
+                   lexSm :: GHC.Types.Int = Anagram.$wgo small 1#
+                 } in
+                 letrec {
+                   go :: [[GHC.Types.Char]] -> [[GHC.Types.Char]]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [[GHC.Types.Char]]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ [GHC.Types.Char]
+                       : y ys
+                       -> let {
+                            x :: [GHC.Types.Char]
+                            = GHC.Base.map
+                                @ GHC.Types.Char
+                                @ GHC.Types.Char
+                                GHC.Unicode.toLower
+                                y
+                          } in
+                          case GHC.Classes.$fEqModule_$s$c== x small of wild1 {
+                            GHC.Types.False
+                            -> let {
+                                 $j :: GHC.Prim.Int# -> [[GHC.Types.Char]]
+                                   <join 1> {- Arity: 1, Strictness: <S,U> -}
+                                 = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                                   case lexSm of wild2 { GHC.Types.I# y1 ->
+                                   case GHC.Prim.==# x1 y1 of lwild {
+                                     DEFAULT -> go ys
+                                     1# -> GHC.Types.: @ [GHC.Types.Char] x (go ys) } }
+                               } in
+                               letrec {
+                                 $wgo1 :: [GHC.Types.Char] -> GHC.Prim.Int# -> [[GHC.Types.Char]]
+                                   <join 2> {- Arity: 2, Strictness: <S,1*U><S,U>, Inline: [2] -}
+                                 = \ (w :: [GHC.Types.Char]) (ww :: GHC.Prim.Int#) ->
+                                   case w of wild2 {
+                                     [] -> $j ww
+                                     : y1 ys1
+                                     -> case y1 of wild3 { GHC.Types.C# ds1 ->
+                                        case ds1 of ds2 {
+                                          DEFAULT
+                                          -> case GHC.List.$w!!
+                                                    @ GHC.Types.Int
+                                                    Anagram.primes
+                                                    (GHC.Prim.-#
+                                                       (GHC.Prim.ord# ds2)
+                                                       97#) of wild4 { GHC.Types.I# y2 ->
+                                             $wgo1 ys1 (GHC.Prim.*# ww y2) }
+                                          ' '# -> $wgo1 ys1 (GHC.Prim.*# ww 2#) } } }
+                               } in
+                               $wgo1 x 1#
+                            GHC.Types.True -> go ys } }
+                 } in
+                 go xss) -}
+6b790c65bf8cc91e044791c681033f50
+  anagramsFor1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor56
+                   Anagram.anagramsFor2) -}
+99f4224015851d4814a362c60c7074d2
+  anagramsFor10 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor47
+                   Anagram.anagramsFor11) -}
+06ea27e775bf747088e044ab902fc629
+  anagramsFor11 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor46
+                   Anagram.anagramsFor12) -}
+a87a58b50d43f13e8217099d7f8de968
+  anagramsFor12 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor45
+                   Anagram.anagramsFor13) -}
+d3df43017422ecd9005e5c53217ffbf0
+  anagramsFor13 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor44
+                   Anagram.anagramsFor14) -}
+d7e88772e3c0598dc80e2252e26c8a61
+  anagramsFor14 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor43
+                   Anagram.anagramsFor15) -}
+bc27b80b27de0f6ace9abf2678ec85fd
+  anagramsFor15 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor42
+                   Anagram.anagramsFor16) -}
+8bdb6f1196521945a956b49fca927304
+  anagramsFor16 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor41
+                   Anagram.anagramsFor17) -}
+bb36cd94de3bf056d66b928291176511
+  anagramsFor17 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor40
+                   Anagram.anagramsFor18) -}
+aa9d69e692ca139af4cdfc6a78fff886
+  anagramsFor18 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor39
+                   Anagram.anagramsFor19) -}
+9aa19fb8db37b1a6eb80dded19e5dccd
+  anagramsFor19 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor38
+                   Anagram.anagramsFor20) -}
+8ee68b933f5dbd1b1eda9040c3f3b7c2
+  anagramsFor2 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor55
+                   Anagram.anagramsFor3) -}
+a7ba0a9524c581582bc2a9511270cfd1
+  anagramsFor20 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor37
+                   Anagram.anagramsFor21) -}
+4e53d9c00ef32cf6c1ed224f1c4e7158
+  anagramsFor21 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor36
+                   Anagram.anagramsFor22) -}
+108d4ba0345c6e34dcc359bb898a040b
+  anagramsFor22 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor35
+                   Anagram.anagramsFor23) -}
+9e148fd52224b28d584da13531f61d42
+  anagramsFor23 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor34
+                   Anagram.anagramsFor24) -}
+1de42f1e8c5664184d9b4a540c530a90
+  anagramsFor24 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor33
+                   Anagram.anagramsFor25) -}
+65b489902f53a2f2ca7c92efdf1d5bb4
+  anagramsFor25 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor32
+                   Anagram.anagramsFor26) -}
+e1330baa7d66bf972ad47cf21b1fb3e9
+  anagramsFor26 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor31
+                   Anagram.anagramsFor27) -}
+98da735e946aa7439c93bf5b9cd53def
+  anagramsFor27 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor30
+                   Anagram.anagramsFor28) -}
+be5d25282bab1a60afcd28cb99150744
+  anagramsFor28 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor29
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+ebaaf504d51c68438a5307152df3e416
+  anagramsFor29 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 113#) -}
+67c5d7c84855f6970988992cb2c55f08
+  anagramsFor3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor54
+                   Anagram.anagramsFor4) -}
+e2c087de62f0dd8fbe926e99096e7758
+  anagramsFor30 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 109#) -}
+5c76318e508ea69aee63137c794e7510
+  anagramsFor31 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 107#) -}
+6a9ce438467d9448d04b4728c4818ae4
+  anagramsFor32 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 103#) -}
+da421a245b7ba675c0cf49a37621ba12
+  anagramsFor33 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 101#) -}
+d3cf81025a6d52925c326b39fca4a3b4
+  anagramsFor34 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 97#) -}
+b55983fa77dffb0284f6f9c1c14c40e6
+  anagramsFor35 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 89#) -}
+a792707ac463591953e9fe71d318b454
+  anagramsFor36 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 83#) -}
+90d4ae10942296ebfafedfac907118c9
+  anagramsFor37 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 79#) -}
+e10a81213c5f351883fc964c8f71757d
+  anagramsFor38 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 73#) -}
+233f86f3d5cccff4531383686243221c
+  anagramsFor39 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 71#) -}
+47b1ef947d0a24647d81e529a3a4041c
+  anagramsFor4 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor53
+                   Anagram.anagramsFor5) -}
+3beca091a10443cd0d05203f4609ae68
+  anagramsFor40 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 67#) -}
+35bcb625ad06c1cffbc4389d6318c2c0
+  anagramsFor41 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 61#) -}
+1714f71ab86632426c69ed727980b348
+  anagramsFor42 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 59#) -}
+4532e0e210a13991e273d5717ada9073
+  anagramsFor43 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 53#) -}
+d28ec087d1e51b5cc15d14ae666e58a4
+  anagramsFor44 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 47#) -}
+e9983c0f349753421674703b6c0671d3
+  anagramsFor45 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 43#) -}
+6c0767fbac0baec2408ef3f07fa18ecf
+  anagramsFor46 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 41#) -}
+0c9190dd66f3a7d77ba2294aefb5724f
+  anagramsFor47 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 37#) -}
+5d6c1d3884bd0b5f700898125d34a45f
+  anagramsFor48 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 31#) -}
+ba7cde5578b4943f74cf27d57576e01d
+  anagramsFor49 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 29#) -}
+f9b892301173cdb21d8358194762809d
+  anagramsFor5 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor52
+                   Anagram.anagramsFor6) -}
+2c2d22e0a599e97c6c065919732a1d40
+  anagramsFor50 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 23#) -}
+5c64e48e3857007051531121cc17e014
+  anagramsFor51 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 19#) -}
+2a633531fc0f46375135bc58469ee0d0
+  anagramsFor52 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 17#) -}
+9a5cf88dc9dc3d99312d1a0ea39c5e72
+  anagramsFor53 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 13#) -}
+39c477b089d5cd8e43c68c8d456cdafa
+  anagramsFor54 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 11#) -}
+36844c365e91a2fa9822782dd52f888a
+  anagramsFor55 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 7#) -}
+c5b7963a3792cce728b535d101f5d8b2
+  anagramsFor56 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+e433006570869d0b5482be6f4fbc3626
+  anagramsFor57 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 3#) -}
+30309e16d5db1e01cfa3fd6951e55563
+  anagramsFor6 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor51
+                   Anagram.anagramsFor7) -}
+3fb7641cae2594cedbb7e65fef3b189a
+  anagramsFor7 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor50
+                   Anagram.anagramsFor8) -}
+62eb75103a74255d768e5a8d0ecfada0
+  anagramsFor8 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor49
+                   Anagram.anagramsFor9) -}
+7e583307dbef7fa9e419d2cf01e2177c
+  anagramsFor9 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor48
+                   Anagram.anagramsFor10) -}
+95b878b6728d195d268e69dd95874052
+  primes :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   Anagram.anagramsFor57
+                   Anagram.anagramsFor1) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

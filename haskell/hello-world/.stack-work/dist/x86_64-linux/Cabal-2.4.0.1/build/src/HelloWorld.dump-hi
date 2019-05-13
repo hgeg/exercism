@@ -1,0 +1,63 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-22 10:35:07.878794377 UTC
+
+interface hello-world-1.1.0.5-FOmpJFYXnOH6w3MTx9FwTd:HelloWorld 8063
+  interface hash: 5ab1176ef111ede75708f8c6fa3ceb28
+  ABI hash: fc9ee94de41b1ee7b11c99d012afdd32
+  export-list hash: 3a546f2100aed767f24de7a947185d17
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  HelloWorld.hello
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+6ff76a07102dfce047e6e53c8f2d00a2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   HelloWorld.$trModule3
+                   HelloWorld.$trModule1) -}
+1dc2a06ad578bac8e2991dd888bc6cce
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HelloWorld.$trModule2) -}
+e626cd042d0c1c755bd754740fc4cc7f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HelloWorld"#) -}
+5c629fb63358d8ebdd18411747fc461a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS HelloWorld.$trModule4) -}
+93df64945b8313187f5c25cb561c4762
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("hello-world-1.1.0.5-FOmpJFYXnOH6w3MTx9FwTd"#) -}
+4a330df6c83b5557dadf7bb2abc425e2
+  hello :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# HelloWorld.hello1) -}
+e74d39f91330a9af227b97d8e689c474
+  hello1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Hello, World!"#) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

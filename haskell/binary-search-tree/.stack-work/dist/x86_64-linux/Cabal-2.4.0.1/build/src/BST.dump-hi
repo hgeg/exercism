@@ -1,0 +1,242 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-27 12:24:56.104056428 UTC
+
+interface binary-search-tree-1.0.0.4-9FAKn4m16qyJOg14G1gmPw:BST 8063
+  interface hash: e0edf5cc8999b353de90d920b64e91f1
+  ABI hash: 478ad3471414d8008fd93bfa62cd4cef
+  export-list hash: 052a081327d753ee29562cce6d8e5e2d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  BST.bstLeft
+  BST.bstRight
+  BST.bstValue
+  BST.empty
+  BST.fromList
+  BST.insert
+  BST.singleton
+  BST.toList
+  BST.BST
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+a1ebed39605019755d059433d34f4e2d
+  $fEqBST :: GHC.Classes.Eq a => GHC.Classes.Eq (BST.BST a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U(C(C1(U)),A)>m,
+     Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Classes.Eq a).
+                  @ (BST.BST a) (BST.$fEqBST_$c== @ a v) (BST.$fEqBST_$c/= @ a v) -}
+a1ebed39605019755d059433d34f4e2d
+  $fEqBST_$c/= ::
+    GHC.Classes.Eq a => BST.BST a -> BST.BST a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ a
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: BST.BST a)
+                   (y :: BST.BST a) ->
+                 case BST.$fEqBST_$c== @ a $dEq x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+a1ebed39605019755d059433d34f4e2d
+  $fEqBST_$c== ::
+    GHC.Classes.Eq a => BST.BST a -> BST.BST a -> GHC.Types.Bool
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><S,1*U><S,1*U> -}
+a1ebed39605019755d059433d34f4e2d
+  $fShowBST :: GHC.Show.Show a => GHC.Show.Show (BST.BST a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(C1(C(U))),A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: GHC.Show.Show a).
+                  @ (BST.BST a)
+                  (BST.$fShowBST_$cshowsPrec @ a v)
+                  (BST.$fShowBST_$cshow @ a v)
+                  (BST.$fShowBST_$cshowList @ a v) -}
+11e61cae6d33eceb726032e2e70191f2
+  $fShowBST1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+a1ebed39605019755d059433d34f4e2d
+  $fShowBST_$cshow :: GHC.Show.Show a => BST.BST a -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dShow :: GHC.Show.Show a) (x :: BST.BST a) ->
+                 BST.$fShowBST_$cshowsPrec
+                   @ a
+                   $dShow
+                   BST.$fShowBST1
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+a1ebed39605019755d059433d34f4e2d
+  $fShowBST_$cshowList ::
+    GHC.Show.Show a => [BST.BST a] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   ($dShow :: GHC.Show.Show a)
+                   (ls :: [BST.BST a])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (BST.BST a)
+                   (BST.$fShowBST_$cshowsPrec @ a $dShow BST.$fShowBST1)
+                   ls
+                   s) -}
+a1ebed39605019755d059433d34f4e2d
+  $fShowBST_$cshowsPrec ::
+    GHC.Show.Show a => GHC.Types.Int -> BST.BST a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,U(C(C1(C(U))),A,A)><L,1*U(U)><S,1*U> -}
+c6e0b3e77bff7af872bace448393a8da
+  $tc'Branch :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7453410380424841329##
+                   11424094647911306409##
+                   BST.$trModule
+                   BST.$tc'Branch2
+                   1#
+                   BST.$tc'Branch1) -}
+ffd32967a699a2bd842af1cbf9ed583b
+  $tc'Branch1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+73e97f16db6d0ac3d388db025a908af9
+  $tc'Branch2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BST.$tc'Branch3) -}
+6b99a62c08252a3896cf8f31cfa18b24
+  $tc'Branch3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Branch"#) -}
+017af206ec78dcbfd33f813239616677
+  $tc'Leaf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5730100552725914109##
+                   5667811967347926962##
+                   BST.$trModule
+                   BST.$tc'Leaf2
+                   1#
+                   BST.$tc'Leaf1) -}
+f6b3740858eeedf899bcc19e44478a64
+  $tc'Leaf1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+03287c163233d7779cb292272b6cc019
+  $tc'Leaf2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BST.$tc'Leaf3) -}
+0cd9a4ce146e084ec2fbaa8e24d9a44c
+  $tc'Leaf3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Leaf"#) -}
+6023cf0326e211cdbbbdef82726457eb
+  $tcBST :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12043964185716767445##
+                   4961020966567292185##
+                   BST.$trModule
+                   BST.$trModule1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+b554264862b15261a6ff8f305b561ac6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module BST.$trModule3 BST.$trModule1) -}
+27eb25a04f1ca268f96b3b312270c473
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BST.$trModule2) -}
+9bdf6b9b9b81aac27e1b98dd57951147
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("BST"#) -}
+e8b931c3fe6ce27b6588f7b8e6da3260
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS BST.$trModule4) -}
+a48ec8876a378de5fde452812602f8b0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("binary-search-tree-1.0.0.4-9FAKn4m16qyJOg14G1gmPw"#) -}
+ce78d4e0915654626008dc3102cc5658
+  $winsert ::
+    GHC.Classes.Ord a =>
+    a -> BST.BST a -> (# a, BST.BST a, BST.BST a #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><L,U><S,1*U>,
+     Inline: [2] -}
+a1ebed39605019755d059433d34f4e2d
+  data BST a = Branch a (BST.BST a) (BST.BST a) | Leaf
+b1b9f02847f88162524fe7380be532cc
+  bstLeft :: BST.BST a -> GHC.Maybe.Maybe (BST.BST a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: BST.BST a) ->
+                 case ds of wild {
+                   BST.Branch ds1 l ds2 -> GHC.Maybe.Just @ (BST.BST a) l
+                   BST.Leaf -> GHC.Maybe.Nothing @ (BST.BST a) }) -}
+e21cb13641b679a8f13eeb7881448f3e
+  bstRight :: BST.BST a -> GHC.Maybe.Maybe (BST.BST a)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: BST.BST a) ->
+                 case ds of wild {
+                   BST.Branch ds1 ds2 r -> GHC.Maybe.Just @ (BST.BST a) r
+                   BST.Leaf -> GHC.Maybe.Nothing @ (BST.BST a) }) -}
+a2cdfd15350277309100a41806535c62
+  bstValue :: BST.BST a -> GHC.Maybe.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (ds :: BST.BST a) ->
+                 case ds of wild {
+                   BST.Branch v ds1 ds2 -> GHC.Maybe.Just @ a v
+                   BST.Leaf -> GHC.Maybe.Nothing @ a }) -}
+0c679c16349374d3f81c611b40fd254f
+  empty :: BST.BST a
+  {- HasNoCafRefs, Unfolding: InlineRule (0, True, True) BST.Leaf -}
+487aaf48bf31d111f8798aad06ead291
+  fromList :: GHC.Classes.Ord a => [a] -> BST.BST a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,C(C1(U)),C(C1(U)),A,A,A)><S,1*U> -}
+4d415037a51dd9f4ad1e905f58fdb31a
+  insert :: GHC.Classes.Ord a => a -> BST.BST a -> BST.BST a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,C(C1(U)),A,A,A)><L,U><S,1*U>m1,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a (w :: GHC.Classes.Ord a) (w1 :: a) (w2 :: BST.BST a) ->
+                 case BST.$winsert @ a w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 BST.Branch @ a ww1 ww2 ww3 }) -}
+d47954318f4216625dbcc93557a8d9ad
+  singleton :: a -> BST.BST a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m1,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a (x :: a) ->
+                 BST.Branch @ a x (BST.Leaf @ a) (BST.Leaf @ a)) -}
+36cc4e1090bfb7a0257e4716a2e2ab30
+  toList :: BST.BST a -> [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+instance [safe] GHC.Classes.Eq [BST.BST] = BST.$fEqBST
+instance [safe] GHC.Show.Show [BST.BST] = BST.$fShowBST
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

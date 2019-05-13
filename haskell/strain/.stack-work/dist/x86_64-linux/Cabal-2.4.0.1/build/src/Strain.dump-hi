@@ -1,0 +1,74 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-22 13:19:37.134216311 UTC
+
+interface strain-0.1.0.3-KGC0TpzrnTD76KUfmVgUK4:Strain 8063
+  interface hash: 9b8538cd62b1d0d23b86c8306585d8e1
+  ABI hash: 1010a078b9c93c1014cfdecf1fff1602
+  export-list hash: 230ccb9499c9d73db0e43aa48b6e106c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Strain.discard
+  Strain.keep
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+977b444b572bbe14c579b7b3fe935b5c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Strain.$trModule3
+                   Strain.$trModule1) -}
+7af50af97bc6f3d46766199a05547f00
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Strain.$trModule2) -}
+7701bab05312482c40f6c0b483a5edc1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Strain"#) -}
+27c808ad25ecbbcd239d4f486daedfa9
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Strain.$trModule4) -}
+ef90e7ea88f5eedd1d4877f6552f9040
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("strain-0.1.0.3-KGC0TpzrnTD76KUfmVgUK4"#) -}
+9590947052a359c3e3b51f4814cdc2cb
+  discard :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a (p :: a -> GHC.Types.Bool) (eta :: [a]) ->
+                 Strain.keep
+                   @ a
+                   (\ (x :: a) ->
+                    case p x of wild {
+                      GHC.Types.False -> GHC.Types.True
+                      GHC.Types.True -> GHC.Types.False })
+                   eta) -}
+28bbe047d9120dbf13a0975a9a5e07d6
+  keep :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

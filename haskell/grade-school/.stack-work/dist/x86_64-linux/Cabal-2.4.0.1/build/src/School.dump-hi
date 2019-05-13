@@ -1,0 +1,145 @@
+
+==================== FINAL INTERFACE ====================
+2019-03-05 13:54:21.294913018 UTC
+
+interface grade-school-1.0.0.4-4tExHGpCE3O5YPRE3kLgO8:School 8063
+  interface hash: 27788e0f3837b84b446ea5c6d4ee2ad2
+  ABI hash: 481431c2dbbac39e8aea6476aca0eab2
+  export-list hash: 9bde596da0b5c329b735aebae560945e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  School.add
+  School.empty
+  School.grade
+  School.sorted
+  School.School
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+e9570b314e4299cf0235f2897703f1e0
+  $tc'Empty :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12351948667565762894##
+                   17271164473256976266##
+                   School.$trModule
+                   School.$tc'Empty2
+                   0#
+                   School.$tc'Empty1) -}
+71371f10f2aaca7eddf4134777e4232b
+  $tc'Empty1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+dbc45545886b5b2911de0d31d1fafa61
+  $tc'Empty2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS School.$tc'Empty3) -}
+4c78ea5ac690d540a9d09d7c7b0e708f
+  $tc'Empty3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Empty"#) -}
+c78f88f98b665ab68d350c6184c13c06
+  $tc'Grade :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   119526942569056050##
+                   17278863961767990066##
+                   School.$trModule
+                   School.$tc'Grade2
+                   0#
+                   School.$tc'Grade1) -}
+c9153a24f9c3588631b52edbc113c587
+  $tc'Grade1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+06080ae85143c9dde9626c82511cbfde
+  $tc'Grade2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS School.$tc'Grade3) -}
+fcf493246119d52e7e0df4b4fcd5a5e3
+  $tc'Grade3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Grade"#) -}
+e7e625ea60a72dfb9f1d7e6d59c369b7
+  $tcSchool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15662148563238200957##
+                   16465936740947540785##
+                   School.$trModule
+                   School.$trModule1
+                   0#
+                   GHC.Types.krep$*) -}
+ccce679a5e9c657a6edb47a3de29fc11
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   School.$trModule3
+                   School.$trModule1) -}
+49f88d8fe3a650e7b07bb001f1031f72
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS School.$trModule2) -}
+144f8b0a068db685ca79b9f169e44f40
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("School"#) -}
+d6bb69376ee7a73ba488799bc6032803
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS School.$trModule4) -}
+ec713057c482bc77b1d4fa5c842f7ac5
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("grade-school-1.0.0.4-4tExHGpCE3O5YPRE3kLgO8"#) -}
+f084dd843ae04abc144835a030d22c0e
+  $wadd ::
+    GHC.Types.Int
+    -> GHC.Base.String
+    -> School.School
+    -> (# GHC.Types.Int, [GHC.Base.String], School.School #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(U)><L,U><S,1*U>,
+     Inline: [2] -}
+690da80f243e1d78a2ee29cbd5042a43
+  data School
+    = Empty | Grade GHC.Types.Int [GHC.Base.String] School.School
+73a827a747ea4bf6aeb7ac2279f66470
+  add ::
+    GHC.Types.Int -> GHC.Base.String -> School.School -> School.School
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U(U)><L,U><S,1*U>m2,
+     Inline: [2],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: GHC.Base.String)
+                   (w2 :: School.School) ->
+                 case School.$wadd w w1 w2 of ww { (#,,#) ww1 ww2 ww3 ->
+                 School.Grade ww1 ww2 ww3 }) -}
+fe04c192aadea29dc77dd589cd91d810
+  empty :: School.School
+  {- HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True) School.Empty -}
+c88e1e20235677a079baad808f2a0840
+  grade :: GHC.Types.Int -> School.School -> [GHC.Base.String]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U> -}
+69c08261da2fedef2cad8728730d891c
+  sorted :: School.School -> [(GHC.Types.Int, [GHC.Base.String])]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

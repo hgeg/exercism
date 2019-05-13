@@ -1,0 +1,989 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-06 20:46:28.076515632 UTC
+
+interface resistor-colors-1.0.0.0-FPgmZqcjZnE5BrJunannkd:ResistorColors 8063
+  interface hash: ef1f498ebd6bad55220c70c0de9f409e
+  ABI hash: 4870b14cf14a3770bd853ec0d2f5c9e1
+  export-list hash: 1c214afc6abcdb1a0993563f4f86f1dd
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ResistorColors.value
+  ResistorColors.Color{ResistorColors.Black ResistorColors.Blue ResistorColors.Brown ResistorColors.Green ResistorColors.Grey ResistorColors.Orange ResistorColors.Red ResistorColors.Violet ResistorColors.White ResistorColors.Yellow}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Read e41fafa2b9743248de35dcbbfd66ca5e
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  base-4.12.0.0:Text.Read e428ad664707f4e90693a55e6a6b4b1a
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+1b151c109211a294bfd0f439102b45a6
+  $fEqColor :: GHC.Classes.Eq ResistorColors.Color
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color
+                  ResistorColors.$fEqColor_$c==
+                  ResistorColors.$fEqColor_$c/= -}
+1b151c109211a294bfd0f439102b45a6
+  $fEqColor_$c/= ::
+    ResistorColors.Color -> ResistorColors.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: ResistorColors.Color) (y :: ResistorColors.Color) ->
+                 case x of wild {
+                   ResistorColors.Black
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Black -> GHC.Types.False }
+                   ResistorColors.Brown
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Brown -> GHC.Types.False }
+                   ResistorColors.Red
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Red -> GHC.Types.False }
+                   ResistorColors.Orange
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ResistorColors.Orange -> GHC.Types.False }
+                   ResistorColors.Yellow
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ResistorColors.Yellow -> GHC.Types.False }
+                   ResistorColors.Green
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Green -> GHC.Types.False }
+                   ResistorColors.Blue
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Blue -> GHC.Types.False }
+                   ResistorColors.Violet
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ResistorColors.Violet -> GHC.Types.False }
+                   ResistorColors.Grey
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True ResistorColors.Grey -> GHC.Types.False }
+                   ResistorColors.White
+                   -> case y of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        ResistorColors.White -> GHC.Types.False } }) -}
+1b151c109211a294bfd0f439102b45a6
+  $fEqColor_$c== ::
+    ResistorColors.Color -> ResistorColors.Color -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: ResistorColors.Color)
+                   (ds1 :: ResistorColors.Color) ->
+                 case ds of wild {
+                   ResistorColors.Black
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Black -> GHC.Types.True }
+                   ResistorColors.Brown
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Brown -> GHC.Types.True }
+                   ResistorColors.Red
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Red -> GHC.Types.True }
+                   ResistorColors.Orange
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ResistorColors.Orange -> GHC.Types.True }
+                   ResistorColors.Yellow
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ResistorColors.Yellow -> GHC.Types.True }
+                   ResistorColors.Green
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Green -> GHC.Types.True }
+                   ResistorColors.Blue
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Blue -> GHC.Types.True }
+                   ResistorColors.Violet
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ResistorColors.Violet -> GHC.Types.True }
+                   ResistorColors.Grey
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False ResistorColors.Grey -> GHC.Types.True }
+                   ResistorColors.White
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        ResistorColors.White -> GHC.Types.True } }) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor :: GHC.Read.Read ResistorColors.Color
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color
+                  ResistorColors.$fReadColor_$creadsPrec
+                  ResistorColors.$fReadColor_$creadList
+                  ResistorColors.$fReadColor1
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R))
+                  ResistorColors.$fReadColor_$creadListPrec -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor1 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2,
+     Unfolding: (GHC.Read.$fRead()6
+                   @ ResistorColors.Color
+                   ResistorColors.$fReadColor2
+                     `cast`
+                   (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                             <ResistorColors.Color>_R))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor10 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor16
+                   ResistorColors.$fReadColor11) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor11 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor12
+                   (GHC.Types.[]
+                      @ (GHC.Base.String,
+                         Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor12 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor14,
+                  ResistorColors.$fReadColor13
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor13 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.White) -}
+e3f3cb53176caa7b435f24e2dee47faa
+  $fReadColor14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor15) -}
+4d8ed5a40839a2810983700be007f18c
+  $fReadColor15 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("White"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor16 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor18,
+                  ResistorColors.$fReadColor17
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor17 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Grey) -}
+d20a914ae1b89aabde67253762b6bb49
+  $fReadColor18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor19) -}
+f2c53fa5a7574913a2ac8e6aceb56a7e
+  $fReadColor19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Grey"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor2 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> Text.ParserCombinators.ReadP.ReadP ResistorColors.Color
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (eta :: Text.ParserCombinators.ReadPrec.Prec) ->
+                 GHC.Read.choose2
+                   @ ResistorColors.Color
+                   ResistorColors.$fReadColor_sps
+                   eta) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor20 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor22,
+                  ResistorColors.$fReadColor21
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor21 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Violet) -}
+f48a9fa91e05bb6f4fcfb4a5b71a505a
+  $fReadColor22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor23) -}
+16bf5b2ffad473bd93d09798a6100433
+  $fReadColor23 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Violet"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor24 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor26,
+                  ResistorColors.$fReadColor25
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor25 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Blue) -}
+6786aedf2cbe3343019d400ee36f98e8
+  $fReadColor26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor27) -}
+2aafb80dbb2ab3b0a1d259648a8150a3
+  $fReadColor27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Blue"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor28 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor30,
+                  ResistorColors.$fReadColor29
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor29 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Green) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor3 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor44
+                   ResistorColors.$fReadColor4) -}
+1bbede1e00f2e6b9b5f531f8cea43daf
+  $fReadColor30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor31) -}
+12aba6db6c99184ab42cb4b932ef7dbf
+  $fReadColor31 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Green"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor32 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor34,
+                  ResistorColors.$fReadColor33
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor33 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Yellow) -}
+2d0143d407ee2f31ceb3792ea5e74600
+  $fReadColor34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor35) -}
+f0847a1cbe9e525b284fe79eb94c4ce4
+  $fReadColor35 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Yellow"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor36 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor38,
+                  ResistorColors.$fReadColor37
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor37 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Orange) -}
+c9b99143d587644b5cd78ea7bee00e67
+  $fReadColor38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor39) -}
+449cd13a3748b7a92c9b210a5bcf1363
+  $fReadColor39 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Orange"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor4 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor40
+                   ResistorColors.$fReadColor5) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor40 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor42,
+                  ResistorColors.$fReadColor41
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor41 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Red) -}
+ed6e5594140bb0e36547a77d5580299f
+  $fReadColor42 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor43) -}
+64cb235f53b0b8b2c136e13c206ea16a
+  $fReadColor43 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Red"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor44 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor46,
+                  ResistorColors.$fReadColor45
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor45 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Brown) -}
+367ccd8ecfb38935c7a34c5dbb82676f
+  $fReadColor46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor47) -}
+de0947c0c41cf5a93093dffbad4a387c
+  $fReadColor47 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Brown"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor48 ::
+    ([GHC.Types.Char],
+     Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+  {- Strictness: m,
+     Unfolding: ((ResistorColors.$fReadColor50,
+                  ResistorColors.$fReadColor49
+                    `cast`
+                  ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                    ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                  <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                        <ResistorColors.Color>_R)))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor49 ::
+    Text.ParserCombinators.ReadPrec.Prec
+    -> forall b.
+       (ResistorColors.Color -> Text.ParserCombinators.ReadP.P b)
+       -> Text.ParserCombinators.ReadP.P b
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: Text.ParserCombinators.ReadPrec.Prec)
+                   @ b
+                   (k :: ResistorColors.Color -> Text.ParserCombinators.ReadP.P b) ->
+                 k ResistorColors.Black) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor5 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor36
+                   ResistorColors.$fReadColor6) -}
+85f07569f328a620e8415ccf519c7575
+  $fReadColor50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   ResistorColors.$fReadColor51) -}
+aa05bc4fae2d3e6f7b9db3353855f5b4
+  $fReadColor51 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Black"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor52 ::
+    Text.ParserCombinators.ReadP.P [ResistorColors.Color]
+  {- Unfolding: ((ResistorColors.$fReadColor_$creadListPrec
+                    `cast`
+                  (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                       <[ResistorColors.Color]>_R)
+                    GHC.Read.$fRead()8)
+                   `cast`
+                 (Text.ParserCombinators.ReadP.N:ReadP[0]
+                      <[ResistorColors.Color]>_R)
+                   @ [ResistorColors.Color]
+                   (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                      @ [ResistorColors.Color])) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor6 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor32
+                   ResistorColors.$fReadColor7) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor7 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor28
+                   ResistorColors.$fReadColor8) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor8 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor24
+                   ResistorColors.$fReadColor9) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor9 ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor20
+                   ResistorColors.$fReadColor10) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor_$creadList ::
+    Text.ParserCombinators.ReadP.ReadS [ResistorColors.Color]
+  {- Arity: 1,
+     Unfolding: (Text.ParserCombinators.ReadP.run
+                   @ [ResistorColors.Color]
+                   ResistorColors.$fReadColor52) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor_$creadListPrec ::
+    Text.ParserCombinators.ReadPrec.ReadPrec [ResistorColors.Color]
+  {- Unfolding: (GHC.Read.list
+                   @ ResistorColors.Color
+                   ResistorColors.$fReadColor1
+                     `cast`
+                   ((<Text.ParserCombinators.ReadPrec.Prec>_R
+                     ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
+                                   <ResistorColors.Color>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                                                         <ResistorColors.Color>_R))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor_$creadsPrec ::
+    GHC.Types.Int
+    -> Text.ParserCombinators.ReadP.ReadS ResistorColors.Color
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (n :: GHC.Types.Int) ->
+                 Text.ParserCombinators.ReadP.run
+                   @ ResistorColors.Color
+                   (GHC.Read.$fRead()6
+                      @ ResistorColors.Color
+                      ResistorColors.$fReadColor2
+                        `cast`
+                      (Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
+                                <ResistorColors.Color>_R))
+                      n
+                      @ ResistorColors.Color
+                      (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
+                         @ ResistorColors.Color))) -}
+1b151c109211a294bfd0f439102b45a6
+  $fReadColor_sps ::
+    [(GHC.Base.String,
+      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String,
+                      Text.ParserCombinators.ReadPrec.ReadPrec ResistorColors.Color)
+                   ResistorColors.$fReadColor48
+                   ResistorColors.$fReadColor3) -}
+1b151c109211a294bfd0f439102b45a6
+  $fShowColor :: GHC.Show.Show ResistorColors.Color
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ ResistorColors.Color
+                  ResistorColors.$fShowColor_$cshowsPrec
+                  ResistorColors.$fShowColor_$cshow
+                  ResistorColors.$fShowColor_$cshowList -}
+1b151c109211a294bfd0f439102b45a6
+  $fShowColor_$cshow :: ResistorColors.Color -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: ResistorColors.Color) ->
+                 case x of wild {
+                   ResistorColors.Black -> ResistorColors.$fReadColor50
+                   ResistorColors.Brown -> ResistorColors.$fReadColor46
+                   ResistorColors.Red -> ResistorColors.$fReadColor42
+                   ResistorColors.Orange -> ResistorColors.$fReadColor38
+                   ResistorColors.Yellow -> ResistorColors.$fReadColor34
+                   ResistorColors.Green -> ResistorColors.$fReadColor30
+                   ResistorColors.Blue -> ResistorColors.$fReadColor26
+                   ResistorColors.Violet -> ResistorColors.$fReadColor22
+                   ResistorColors.Grey -> ResistorColors.$fReadColor18
+                   ResistorColors.White -> ResistorColors.$fReadColor14 }) -}
+1b151c109211a294bfd0f439102b45a6
+  $fShowColor_$cshowList :: [ResistorColors.Color] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [ResistorColors.Color]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ ResistorColors.Color
+                   ResistorColors.$w$cshowsPrec
+                   ls
+                   s) -}
+1b151c109211a294bfd0f439102b45a6
+  $fShowColor_$cshowsPrec ::
+    GHC.Types.Int -> ResistorColors.Color -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: ResistorColors.Color)
+                   (w2 :: GHC.Base.String) ->
+                 ResistorColors.$w$cshowsPrec w1 w2) -}
+283efff2c467ea7c3d7c318bb0783f30
+  $tc'Black :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6968416875655149661##
+                   17212397554377759181##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Black2
+                   0#
+                   ResistorColors.$tc'Black1) -}
+df64198a1e531f9c2a736f70f4ab3710
+  $tc'Black1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+42758d8df243394572dda7001cd5ac6f
+  $tc'Black2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Black3) -}
+b74bc8fabfa151c7937109d54e94c11d
+  $tc'Black3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Black"#) -}
+54db41b0d3191954c0b6345b65e8fbfa
+  $tc'Blue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3325811211985884066##
+                   9407573765551012835##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Blue1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+2f6d3b9fdd60506eab6d9bb9ff6dd573
+  $tc'Blue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Blue2) -}
+f8cf3f1cc478056590f04485cb76dd8d
+  $tc'Blue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Blue"#) -}
+1d8c16e85bfd08ad29d9334a90815925
+  $tc'Brown :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15191238413004307024##
+                   150609020326490725##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Brown1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+76c70f3a913be3fdc94b8a4c1cf7f94b
+  $tc'Brown1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Brown2) -}
+c6a599741d15108d1c326d667d2a40f4
+  $tc'Brown2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Brown"#) -}
+86408c8d83217683d6573087e15104c6
+  $tc'Green :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16414363981142506924##
+                   17127242872508311550##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Green1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+dab6e5e7afb81e7d80decf9c9d6cdd1b
+  $tc'Green1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Green2) -}
+6e3db8776b913af3a6e662004a7aa480
+  $tc'Green2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Green"#) -}
+c0e67e47f1a9cc34350b605bd1a5e840
+  $tc'Grey :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1133254838148489064##
+                   472871806458964616##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Grey1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+70572558b06d5582449545da74824101
+  $tc'Grey1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Grey2) -}
+de70aa6e3b5504c9bba940417948be8e
+  $tc'Grey2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Grey"#) -}
+9373d9c0bfeb6e13822c3b675451ce6c
+  $tc'Orange :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4451393314677578286##
+                   6673642044215938728##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Orange1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+10af51570200f182d775e5a5d2d67f11
+  $tc'Orange1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Orange2) -}
+2bbf904f42858e73cde0da5a15b47112
+  $tc'Orange2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Orange"#) -}
+a1829fd5927a67fdbe5b6ce12697bc5e
+  $tc'Red :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11857351727086312009##
+                   6671522616019059765##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Red1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+464ad6bdf59f311b812842fbf3961705
+  $tc'Red1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Red2) -}
+f82b8615497030a7a8f01d2605e9f79e
+  $tc'Red2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Red"#) -}
+266ff5b105f3a8a1bc190e27439efefb
+  $tc'Violet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10431023193452168135##
+                   11137255890515118148##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Violet1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+37489ae20911a453310bd038cd847742
+  $tc'Violet1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Violet2) -}
+d559686ebfc2547ef6c793fd282567e7
+  $tc'Violet2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Violet"#) -}
+55ef9c25dfe33fb3f9ea0f0a2368dd18
+  $tc'White :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12497427214421746063##
+                   160712142589734008##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'White1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+1c691e1fd22f804d9b45ec4915685679
+  $tc'White1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'White2) -}
+6ff1e3099f2715fe461c7c4077cc62dd
+  $tc'White2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'White"#) -}
+909ff4aec04173819c9cbe1627dbb23e
+  $tc'Yellow :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9671374759861910953##
+                   9127400344332810133##
+                   ResistorColors.$trModule
+                   ResistorColors.$tc'Yellow1
+                   0#
+                   ResistorColors.$tc'Black1) -}
+e23ce6718700bc57333552f5cf4d44ab
+  $tc'Yellow1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tc'Yellow2) -}
+c6275c05c8961d24be2dd16327afc81c
+  $tc'Yellow2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Yellow"#) -}
+231dc6163076175f370e506983147b2f
+  $tcColor :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3909555980085019270##
+                   6756780482773451522##
+                   ResistorColors.$trModule
+                   ResistorColors.$tcColor1
+                   0#
+                   GHC.Types.krep$*) -}
+e1d85fbba1429073e1e4e7b36f6df172
+  $tcColor1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$tcColor2) -}
+0a60530ec7eaef25ca02aefafb695824
+  $tcColor2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Color"#) -}
+492045d1f75b0218472682541b22ec83
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   ResistorColors.$trModule3
+                   ResistorColors.$trModule1) -}
+2f313a115efd9e7a3f3e8d23fce36b52
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$trModule2) -}
+1fbf22c77238dc775ee115490b4247b2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ResistorColors"#) -}
+c2a8cc6132be3f8be567288e3268249d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS ResistorColors.$trModule4) -}
+77d772b6972c1f6e3f752a6fa66a1067
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("resistor-colors-1.0.0.0-FPgmZqcjZnE5BrJunannkd"#) -}
+1b151c109211a294bfd0f439102b45a6
+  $w$cshowsPrec ::
+    ResistorColors.Color -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: ResistorColors.Color)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   ResistorColors.Black
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor50 w1
+                   ResistorColors.Brown
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor46 w1
+                   ResistorColors.Red
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor42 w1
+                   ResistorColors.Orange
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor38 w1
+                   ResistorColors.Yellow
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor34 w1
+                   ResistorColors.Green
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor30 w1
+                   ResistorColors.Blue
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor26 w1
+                   ResistorColors.Violet
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor22 w1
+                   ResistorColors.Grey
+                   -> GHC.Base.++ @ GHC.Types.Char ResistorColors.$fReadColor18 w1
+                   ResistorColors.White
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        ResistorColors.$fReadColor14
+                        w1 }) -}
+a9f1785f3c1a6564f88e90a5c6b5154e
+  $wdigit :: ResistorColors.Color -> GHC.Prim.Char#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [2],
+     Unfolding: (\ (w :: ResistorColors.Color) ->
+                 case w of wild {
+                   ResistorColors.Black -> '0'#
+                   ResistorColors.Brown -> '1'#
+                   ResistorColors.Red -> '2'#
+                   ResistorColors.Orange -> '3'#
+                   ResistorColors.Yellow -> '4'#
+                   ResistorColors.Green -> '5'#
+                   ResistorColors.Blue -> '6'#
+                   ResistorColors.Violet -> '7'#
+                   ResistorColors.Grey -> '8'#
+                   ResistorColors.White -> '9'# }) -}
+1b151c109211a294bfd0f439102b45a6
+  data Color
+    = Black
+    | Brown
+    | Red
+    | Orange
+    | Yellow
+    | Green
+    | Blue
+    | Violet
+    | Grey
+    | White
+e4c19cc743a9c98ea36665c8debac911
+  digit :: ResistorColors.Color -> GHC.Types.Char
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: ResistorColors.Color) ->
+                 case ResistorColors.$wdigit w of ww { DEFAULT ->
+                 GHC.Types.C# ww }) -}
+35f6994a8b897bc71ee744ef4adf232d
+  value :: [ResistorColors.Color] -> GHC.Types.Int
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: [ResistorColors.Color]) ->
+                 case Text.Read.readEither8
+                        @ GHC.Types.Int
+                        (Text.ParserCombinators.ReadP.run
+                           @ GHC.Types.Int
+                           ResistorColors.value3
+                           (GHC.Base.map
+                              @ ResistorColors.Color
+                              @ GHC.Types.Char
+                              ResistorColors.digit
+                              x)) of wild {
+                   [] -> ResistorColors.value2
+                   : x1 ds
+                   -> case ds of wild1 {
+                        [] -> x1 : ipv ipv1 -> ResistorColors.value1 } }) -}
+4b844cf13338361f6376353f49ffd7aa
+  value1 :: GHC.Types.Int
+  {- Strictness: x -}
+0bf1d2040e6f871fa8c96366e93e7549
+  value2 :: GHC.Types.Int
+  {- Strictness: x -}
+ca3ecaa421975e5b8f934a39453f83b5
+  value3 :: Text.ParserCombinators.ReadP.P GHC.Types.Int
+  {- Unfolding: (GHC.Read.$fReadInt_$sreadNumber
+                   GHC.Read.$fReadInt2
+                   Text.ParserCombinators.ReadPrec.minPrec
+                   @ GHC.Types.Int
+                   (Text.Read.readEither7 @ GHC.Types.Int)) -}
+instance [safe] GHC.Classes.Eq [ResistorColors.Color]
+  = ResistorColors.$fEqColor
+instance [safe] GHC.Read.Read [ResistorColors.Color]
+  = ResistorColors.$fReadColor
+instance [safe] GHC.Show.Show [ResistorColors.Color]
+  = ResistorColors.$fShowColor
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

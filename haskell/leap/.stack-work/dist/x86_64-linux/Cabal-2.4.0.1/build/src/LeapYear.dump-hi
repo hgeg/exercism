@@ -1,0 +1,94 @@
+
+==================== FINAL INTERFACE ====================
+2019-02-23 22:25:21.819537013 UTC
+
+interface leap-1.4.0.8-2LgkrkMbq3S1t7LLv6C85G:LeapYear 8063
+  interface hash: bbfc88bb9f5053a93f4d35f30649a246
+  ABI hash: a83744f757e5044bb5385ee5ac5cce8d
+  export-list hash: b0bc853090a8624776a8935fb2cd8d16
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  LeapYear.isLeapYear
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Real f7dad82c1d43d80823865d3e6c6636e0
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 7f56f3d142debd8666df241a1ddc7887
+15a0a8530f6f883f0a8ba24fc94fcefd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   LeapYear.$trModule3
+                   LeapYear.$trModule1) -}
+6f75599f88c87fc4a10e97f03d6471d3
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LeapYear.$trModule2) -}
+7b9f548395dbbe55a2a97c0534856f22
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("LeapYear"#) -}
+bd2689e4b95840cfc6a5cae198801b62
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS LeapYear.$trModule4) -}
+f3031bd2ec49640dc6163526286a54fc
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("leap-1.4.0.8-2LgkrkMbq3S1t7LLv6C85G"#) -}
+f7cc5944800b1e232135175f987b525c
+  isLeapYear :: GHC.Integer.Type.Integer -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (year :: GHC.Integer.Type.Integer) ->
+                 let {
+                   divisibleBy :: GHC.Integer.Type.Integer -> GHC.Types.Bool
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (n :: GHC.Integer.Type.Integer) ->
+                     case GHC.Integer.Type.eqInteger# n LeapYear.isLeapYear4 of wild {
+                       DEFAULT
+                       -> case GHC.Integer.Type.eqInteger#
+                                 (GHC.Integer.Type.remInteger year n)
+                                 LeapYear.isLeapYear4 of wild1 { DEFAULT ->
+                          GHC.Prim.tagToEnum# @ GHC.Types.Bool wild1 }
+                       1# -> case GHC.Real.divZeroError ret_ty GHC.Types.Bool of {} }
+                 } in
+                 case divisibleBy LeapYear.isLeapYear3 of wild {
+                   GHC.Types.False
+                   -> case divisibleBy LeapYear.isLeapYear2 of wild1 {
+                        GHC.Types.False -> divisibleBy LeapYear.isLeapYear1
+                        GHC.Types.True -> GHC.Types.False }
+                   GHC.Types.True -> GHC.Types.True }) -}
+6e365eaa019c66caa98723b8bbb936ca
+  isLeapYear1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+20a41ec11013491ce2ff36a6816fd441
+  isLeapYear2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (100) -}
+ff36943ae419bb02bc578802118919d1
+  isLeapYear3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (400) -}
+4d17abb0e440d9d52c38b6b14dc5ada3
+  isLeapYear4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

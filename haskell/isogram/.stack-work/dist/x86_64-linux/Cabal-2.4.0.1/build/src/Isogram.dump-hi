@@ -1,0 +1,77 @@
+
+==================== FINAL INTERFACE ====================
+2019-03-05 12:37:56.918114689 UTC
+
+interface isogram-1.7.0.7-JsPmKJDFED9sbscAiVEMd:Isogram 8063
+  interface hash: 596967311f72698edcb2cc69779933c3
+  ABI hash: 1d52e6b5c8336a473075fee7ad65c735
+  export-list hash: 9e03167a2a4151a6087d149cf72a34ac
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Isogram.isIsogram
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Char 0f6e335e98e2ddac4f2764f212d2f08a
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Unicode e72f63c0b07b1495548f1f84ce6c22b5
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+3ea63b10f87ed750c7bdb4de9b2d34a0
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Isogram.$trModule3
+                   Isogram.$trModule1) -}
+7c70947daa71a744d2d632fbdd4f4824
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Isogram.$trModule2) -}
+761b22d922ccfee7f5c6326a565ff187
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Isogram"#) -}
+4d78eb5c284c0b0da6b7db4162baad2c
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Isogram.$trModule4) -}
+03eb0315c2032d02988b71e20e1ef035
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("isogram-1.7.0.7-JsPmKJDFED9sbscAiVEMd"#) -}
+fee9133e38ad42caf702c2ee5f7e18ac
+  isIsogram :: GHC.Base.String -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (word :: GHC.Base.String) ->
+                 let {
+                   lower :: [GHC.Types.Char]
+                   = GHC.Base.map
+                       @ GHC.Types.Char
+                       @ GHC.Types.Char
+                       GHC.Unicode.toLower
+                       word
+                 } in
+                 GHC.Base.eqString (Isogram.isIsogram_go lower) lower) -}
+10ad7a30d1b881dacb1d9316f67ca235
+  isIsogram_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

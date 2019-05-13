@@ -1,0 +1,254 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-29 08:48:46.902393314 UTC
+
+interface minesweeper-1.1.0.5-IJUmGZ6BCZBKizKbAdCxgP:Minesweeper 8063
+  interface hash: 80504ef863d14f3223483c02caea2012
+  ABI hash: 1652bcd877c220bddc349156b5352bed
+  export-list hash: b733ff6764dd584b4e63f9f88b555a5a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Minesweeper.annotate
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.Foldable 00188ddf89c975fee76bdfad479443c1
+import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
+import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
+import  -/  base-4.12.0.0:Data.Tuple c92a835d04b6c075a7031d4e28e53c71
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Real f7dad82c1d43d80823865d3e6c6636e0
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+2f1876d5a48411a705bd8813d55383a7
+  $fEqCell :: GHC.Classes.Eq Minesweeper.Cell
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Minesweeper.Cell
+                  Minesweeper.$fEqCell_$c==
+                  Minesweeper.$fEqCell_$c/= -}
+2f1876d5a48411a705bd8813d55383a7
+  $fEqCell_$c/= ::
+    Minesweeper.Cell -> Minesweeper.Cell -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Minesweeper.Cell) (y :: Minesweeper.Cell) ->
+                 case x of wild {
+                   Minesweeper.M
+                   -> case y of wild1 {
+                        Minesweeper.M -> GHC.Types.False
+                        Minesweeper.N ipv -> GHC.Types.True }
+                   Minesweeper.N a1
+                   -> case y of wild1 {
+                        Minesweeper.M -> GHC.Types.True
+                        Minesweeper.N b1
+                        -> case GHC.Classes.eqInt a1 b1 of wild2 {
+                             GHC.Types.False -> GHC.Types.True
+                             GHC.Types.True -> GHC.Types.False } } }) -}
+2f1876d5a48411a705bd8813d55383a7
+  $fEqCell_$c== ::
+    Minesweeper.Cell -> Minesweeper.Cell -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Minesweeper.Cell) (ds1 :: Minesweeper.Cell) ->
+                 case ds of wild {
+                   Minesweeper.M
+                   -> case ds1 of wild1 {
+                        Minesweeper.M -> GHC.Types.True
+                        Minesweeper.N ipv -> GHC.Types.False }
+                   Minesweeper.N a1
+                   -> case ds1 of wild1 {
+                        Minesweeper.M -> GHC.Types.False
+                        Minesweeper.N b1 -> GHC.Classes.eqInt a1 b1 } }) -}
+2f1876d5a48411a705bd8813d55383a7
+  $fShowCell :: GHC.Show.Show Minesweeper.Cell
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Minesweeper.Cell
+                  Minesweeper.$fShowCell_$cshowsPrec
+                  Minesweeper.$fShowCell_$cshow
+                  Minesweeper.$fShowCell_$cshowList -}
+ce4c3061f03ba18a207dcde0a5d063d5
+  $fShowCell1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Minesweeper.$fShowCell2) -}
+9443befc2e3118c78b4d2690870fdd3a
+  $fShowCell2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (" "#) -}
+511fce15f06932159a8180d10324ce45
+  $fShowCell3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Minesweeper.$fShowCell4) -}
+c75fe91ba4a06ce4f6f115301c34c636
+  $fShowCell4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("*"#) -}
+2f1876d5a48411a705bd8813d55383a7
+  $fShowCell_$cshow :: Minesweeper.Cell -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Minesweeper.Cell) ->
+                 case ds of wild {
+                   Minesweeper.M -> Minesweeper.$fShowCell3
+                   Minesweeper.N ds1
+                   -> case ds1 of wild1 { GHC.Types.I# ds2 ->
+                      case ds2 of ds3 {
+                        DEFAULT
+                        -> case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ds3
+                                  (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Types.: @ GHC.Types.Char ww5 ww6 }
+                        0# -> Minesweeper.$fShowCell1 } } }) -}
+2f1876d5a48411a705bd8813d55383a7
+  $fShowCell_$cshowList :: [Minesweeper.Cell] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Minesweeper.Cell]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Minesweeper.Cell
+                   Minesweeper.$w$cshowsPrec
+                   ls
+                   s) -}
+2f1876d5a48411a705bd8813d55383a7
+  $fShowCell_$cshowsPrec ::
+    GHC.Types.Int -> Minesweeper.Cell -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [2],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Minesweeper.Cell)
+                   (w2 :: GHC.Base.String) ->
+                 Minesweeper.$w$cshowsPrec w1 w2) -}
+19ed27fefb66888e4dabaa29812ae1e5
+  $tc'M :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1632589441888369503##
+                   15665996269558236791##
+                   Minesweeper.$trModule
+                   Minesweeper.$tc'M2
+                   0#
+                   Minesweeper.$tc'M1) -}
+21aaa3e5284deecc788fbb822191b515
+  $tc'M1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+64bf1ce8ff778ac2441c3fa0e6fc20f3
+  $tc'M2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Minesweeper.$tc'M3) -}
+fad698fb37daec8ca76b34a38bcebd36
+  $tc'M3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'M"#) -}
+4295571e8c503b26de9da44187fa29c7
+  $tc'N :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12403945160987323345##
+                   8870044905722194716##
+                   Minesweeper.$trModule
+                   Minesweeper.$tc'N2
+                   0#
+                   Minesweeper.$tc'N1) -}
+7189a03cdbdcf84897f6c17b426d8f2f
+  $tc'N1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ae5b0557c409f2afa0c0991291a803bb
+  $tc'N2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Minesweeper.$tc'N3) -}
+10ec68829b0af9184a646a698c78500b
+  $tc'N3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'N"#) -}
+7e9f87fa34a56291574cd962f8c73272
+  $tcCell :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14898453332681793049##
+                   2182936782989199504##
+                   Minesweeper.$trModule
+                   Minesweeper.$tcCell1
+                   0#
+                   GHC.Types.krep$*) -}
+bcda6b597742204aa9f4a8dce8f807e9
+  $tcCell1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Minesweeper.$tcCell2) -}
+465216048f9abd6523f7c439ca47bf61
+  $tcCell2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Cell"#) -}
+b40e5f4fd01c5752d47feb901e56d5ae
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Minesweeper.$trModule3
+                   Minesweeper.$trModule1) -}
+0e3af6c75b0c1f14b39f3cfa3f692589
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Minesweeper.$trModule2) -}
+4a1eea1e6f56bc0ca455231a09146f28
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Minesweeper"#) -}
+e55ac27ce7ee3b9e7430b4a18a5afa47
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Minesweeper.$trModule4) -}
+39695082e4c5acf615606876ee58923d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("minesweeper-1.1.0.5-IJUmGZ6BCZBKizKbAdCxgP"#) -}
+2f1876d5a48411a705bd8813d55383a7
+  $w$cshowsPrec ::
+    Minesweeper.Cell -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [2],
+     Unfolding: (\ (w :: Minesweeper.Cell) (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Minesweeper.M
+                   -> GHC.Base.++ @ GHC.Types.Char Minesweeper.$fShowCell3 w1
+                   Minesweeper.N ds
+                   -> case ds of wild1 { GHC.Types.I# ds1 ->
+                      case ds1 of ds2 {
+                        DEFAULT
+                        -> case GHC.Show.$wshowSignedInt
+                                  0#
+                                  ds2
+                                  (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                           GHC.Base.++_$s++ @ GHC.Types.Char w1 ww5 ww6 }
+                        0#
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Minesweeper.$fShowCell1
+                             w1 } } }) -}
+2f1876d5a48411a705bd8813d55383a7
+  data Cell = M | N GHC.Types.Int
+55c7335abda009893a1f466f7997720a
+  annotate :: [GHC.Base.String] -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,1*U> -}
+instance [safe] GHC.Classes.Eq [Minesweeper.Cell]
+  = Minesweeper.$fEqCell
+instance [safe] GHC.Show.Show [Minesweeper.Cell]
+  = Minesweeper.$fShowCell
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

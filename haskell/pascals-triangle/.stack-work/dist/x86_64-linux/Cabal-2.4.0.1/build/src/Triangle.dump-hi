@@ -1,0 +1,88 @@
+
+==================== FINAL INTERFACE ====================
+2019-04-26 09:39:10.155843574 UTC
+
+interface pascals-triangle-1.5.0.9-FYLUTpBaqmoBnbDAGQAA4a:Triangle 8063
+  interface hash: 2b19e0282309f556eb95d84f848974d6
+  ABI hash: e4887a3dfa1d2bc58337122cfb3d74fe
+  export-list hash: 7d9a1901b4949ca28fb1a075edfb562a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: d59a86fc39dabe8754ebbfb830e37f1e
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Triangle.rows
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  integer-gmp-1.0.2.0:GHC.Integer.Type 7f56f3d142debd8666df241a1ddc7887
+0ff7775732b2a064c89507619bbadccc
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Triangle.$trModule3
+                   Triangle.$trModule1) -}
+35fe5dab5188bda26c3a53e080e3b054
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Triangle.$trModule2) -}
+8af34142d0405896eff51c7ffa7a0db9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Triangle"#) -}
+5d34586ed6d27e83ae018131f1897247
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Triangle.$trModule4) -}
+d7fad82ff76292a7ea914e6fc3050e1e
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("pascals-triangle-1.5.0.9-FYLUTpBaqmoBnbDAGQAA4a"#) -}
+238cff411266b81e77978b2e57d95d19
+  $wrow :: GHC.Prim.Int# -> [GHC.Integer.Type.Integer]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+3f3688473d8647195c271db4ca5fa7a4
+  $wrows :: GHC.Prim.Int# -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S,U>, Inline: [2],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.># 1# ww of lwild {
+                   DEFAULT
+                   -> letrec {
+                        go :: GHC.Prim.Int# -> [[GHC.Integer.Type.Integer]]
+                          {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ [GHC.Integer.Type.Integer]
+                            (Triangle.$wrow x)
+                            (case GHC.Prim.==# x ww of lwild1 {
+                               DEFAULT -> go (GHC.Prim.+# x 1#)
+                               1# -> GHC.Types.[] @ [GHC.Integer.Type.Integer] })
+                      } in
+                      go 1#
+                   1# -> GHC.Types.[] @ [GHC.Integer.Type.Integer] }) -}
+2bf54ab736af18af3906eb88c020a309
+  rows :: GHC.Types.Int -> [[GHC.Integer.Type.Integer]]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Triangle.$wrows ww1 }) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
