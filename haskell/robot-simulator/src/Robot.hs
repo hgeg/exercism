@@ -6,22 +6,39 @@ module Robot
     , move
     ) where
 
+type Coordinates = (Integer, Integer)
+
 data Bearing = North
              | East
              | South
              | West
-             deriving (Eq, Show)
+             deriving (Eq, Show, Enum, Bounded)
 
-data Robot = Dummy
+class (Eq a, Bounded a, Enum a) => Direction a where
+    left :: a -> a
+    left  v = if v == minBound then maxBound else pred v
+    right :: a -> a
+    right v = if v == maxBound then minBound else succ v
 
-bearing :: Robot -> Bearing
-bearing robot = error "You need to implement this function."
+instance Direction Bearing
 
-coordinates :: Robot -> (Integer, Integer)
-coordinates robot = error "You need to implement this function."
+data Robot = Robot {
+  bearing     :: Bearing,
+  coordinates :: (Integer, Integer) 
+}
 
-mkRobot :: Bearing -> (Integer, Integer) -> Robot
-mkRobot direction coordinates = error "You need to implement this function."
+mkRobot :: Bearing -> Coordinates -> Robot
+mkRobot = Robot
 
 move :: Robot -> String -> Robot
-move robot instructions = error "You need to implement this function."
+move r           []         = r
+move (Robot b c) ('R':rest) = move (Robot (right b) c)      rest
+move (Robot b c) ('L':rest) = move (Robot (left  b) c)      rest
+move (Robot b c) ('A':rest) = move (Robot b (advance b c))  rest
+  where advance :: Bearing -> Coordinates -> Coordinates
+        advance North (x, y) = (x, y+1)
+        advance East  (x, y) = (x+1, y)
+        advance South (x, y) = (x, y-1)
+        advance West  (x, y) = (x-1, y)
+move _           _         = error "invalid instructions"
+
